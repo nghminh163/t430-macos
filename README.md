@@ -8,5 +8,7 @@ All kexts are latest as of 25th of October 2018.
 
 Important specs:
 
-Intel Core i5-3320M CPU
-Intel HD 4000
+* Intel Core i5-3320M CPU
+* Intel HD 4000
+
+The only thing that **does not work** is Wi-Fi. You may be able to fix that with Google though :)
