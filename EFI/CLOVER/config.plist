@@ -182,8 +182,11 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>DualLink</key>
-		<integer>0</integer>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<true/>
+		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -224,13 +227,9 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3</string>
-		<key>MLB</key>
-		<string>C02201500GUDJWK8CC02201500GUDJWK8CC02201500GUDJWK8C</string>
+		<string>0x67</string>
 		<key>ROM</key>
-		<data>
-		XRu1gV6w
-		</data>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
