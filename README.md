@@ -1,6 +1,6 @@
 # ThinkPad T430 EFI for macOS Mojave 10.14
 
-**Install all kexts from EFI/kexts/Other to S/L/E using Kext Utility**
+**Install all kexts from EFI/CLOVER/kexts/Other to S/L/E using Kext Utility**
 
 This is the Clover EFI folder for the ThinkPad T430.
 
