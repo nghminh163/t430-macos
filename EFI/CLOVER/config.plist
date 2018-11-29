@@ -288,7 +288,7 @@
 		<key>CustomUUID</key>
 		<string>84BAEF35-C67F-4CB3-8A54-4C55E0B2D1E0</string>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 	</dict>
 </dict>
 </plist>
