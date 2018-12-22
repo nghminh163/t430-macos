@@ -37,65 +37,6 @@
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>change LPC to LPCB</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					TFBDXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					TFBDQg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT1 to SATA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					U0FUMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
@@ -141,16 +82,12 @@
 			<key>Inject</key>
 			<integer>28</integer>
 		</dict>
-		<key>SetIntelBacklight</key>
-		<false/>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>GUI</key>
@@ -209,10 +146,6 @@
 		<true/>
 		<key>Debug</key>
 		<false/>
-		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\AppleIntelFramebufferCapri.kext</string>
-		</array>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -221,6 +154,107 @@
 		<true/>
 		<key>KernelXCPM</key>
 		<false/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>TRIM Support Enable</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DP Video Enable 1/2</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				BABmAQEDAQEAAAAC
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferCapri</string>
+				<key>Replace</key>
+				<data>
+				BABmAQECBAIAAAAE
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DP Video Enable 2/2</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MAIAAAAAAAABAAAAQAAAAAAAAAABAAAAQAAAAAAAAAAB
+				AAAAQAAAAAAAAAAAAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferCapri</string>
+				<key>Replace</key>
+				<data>
+				MAIAAAIFAAAABAAABwQAAAMEAAAABAAAgQAAAAQGAAAA
+				BAAAgQAAAAAAAAAAAgAR
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DP Audio Enable (0205)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AgUAAAAEAAAHBAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferCapri</string>
+				<key>Replace</key>
+				<data>
+				AgUAAAAIAAAGAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DP Audio Enable (0304)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AwQAAAAEAACBAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferCapri</string>
+				<key>Replace</key>
+				<data>
+				AwQAAAAIAAAGAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DP Audio Enable (0406)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				BAYAAAAEAACBAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferCapri</string>
+				<key>Replace</key>
+				<data>
+				BAYAAAAIAAAGAAAA
+				</data>
+			</dict>
+		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -234,59 +268,46 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>05/10/12</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP91.88Z.00D7.B00.1708080744</string>
+		<string>MBP101.88Z.00EE.B00.1205101839</string>
 		<key>Board-ID</key>
-		<string>Mac-6F01561E16C75D06</string>
+		<string>Mac-C3EC7CD22292981F</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02342104GUF1YJJC</string>
+		<string>C022443014NF16PAD</string>
 		<key>BoardType</key>
 		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x0A</string>
+		<string>0x08</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xC00DE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Memory</key>
-		<dict>
-			<key>Channels</key>
-			<integer>0</integer>
-		</dict>
 		<key>Mobile</key>
 		<true/>
-		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
 		<key>ProductName</key>
-		<string>MacBookPro9,2</string>
+		<string>MacBookPro10,1</string>
 		<key>SerialNumber</key>
-		<string>C02LK0RTDTY3</string>
-		<key>SmUUID</key>
-		<string>CE57E5B5-EA1D-4191-9F1F-9A1B9E9F77AD</string>
+		<string>C02JM0XNG4N7</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>84BAEF35-C67F-4CB3-8A54-4C55E0B2D1E0</string>
+		<string>27F155F0-39CA-482C-A715-BD3AB88F4F11</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 	</dict>
