@@ -10,3 +10,6 @@ Works with macOS Catalina 10.15.1.
 * HibernationFixup 1.3.0
 
 
+## Important info
+
+* Don't put any kext in S/L/E, Clover will load them automatically. If you have some already, delete them and rebuild your cache before rebooting.
