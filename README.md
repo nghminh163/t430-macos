@@ -12,4 +12,4 @@ Works with macOS Catalina 10.15.1.
 
 ## Important info
 
-* Don't put any kext in S/L/E, Clover will load them automatically. If you have some already, delete them and rebuild your cache before rebooting.
+* Don't put any kexts in S/L/E, Clover will load them automatically. If you have some already, delete them and rebuild your cache before rebooting.
