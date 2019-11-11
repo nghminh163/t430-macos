@@ -1,5 +1,7 @@
 # ThinkPad T430 EFI
 
+![ThinkPad T430]()
+
 Works with macOS Catalina 10.15.1.
 
 * Clover r5098
