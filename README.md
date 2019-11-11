@@ -1,15 +1,18 @@
 # ThinkPad T430 EFI
 
-![ThinkPad T430]()
+![thinkpad](thinkpad.jpg)
 
-Works with macOS Catalina 10.15.1.
+This is a repo which includes all files required to run macOS Catalina 10.15.1 on a ThinkPad T430 with Intel HD 4000 graphics and a 1400x900 display.
+
+These are the versions of software included in this repository:
 
 * Clover r5098
-* AppleSupportPkg 2.0.9, 2.1.2
-* Lilu 1.3.9
-* WhateverGreen 1.3.4
-* AppleALC 1.4.3
-* HibernationFixup 1.3.0
+* [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg/releases) 2.0.9, 2.1.2
+* [Lilu](https://github.com/acidanthera/Lilu/releases) 1.3.9
+* [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases) 1.3.4
+* [AppleALC](https://github.com/acidanthera/AppleALC/releases) 1.4.3
+* [HibernationFixup](https://github.com/acidanthera/HibernationFixup/releases) 1.3.0
+* [IntelMausi](https://github.com/acidanthera/IntelMausi/releases) 1.0.2
 
 
 ## Important info
