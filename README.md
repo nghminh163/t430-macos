@@ -16,3 +16,7 @@ These are the versions of software included in this repository:
 ## Important info
 
 * Don't put any kexts in S/L/E, Clover will load them automatically. If you have some already, delete them and rebuild your cache before rebooting.
+
+* If you have a model with the 1366x768 display, make sure to set `ig-platform-id` in `config.boot` to `0x01660003`.
+
+* Don't forget to generate your own SMBIOS values!
