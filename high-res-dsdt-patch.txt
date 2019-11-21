@@ -189,11 +189,11 @@ end;
 
 # _Q68 (Fn+F8) App switcher key
 # opens Music app on Catalina
-into method label _Q68 replace_content
-begin
-    	Notify(\_SB.PCI0.LPC.KBD, 0x0166)\n
-    	Notify(\_SB.PCI0.LPC.KBD, 0x01e6)\n
-end;
+#into method label _Q68 replace_content
+#begin
+#    	Notify(\_SB.PCI0.LPC.KBD, 0x0166)\n
+#    	Notify(\_SB.PCI0.LPC.KBD, 0x01e6)\n
+#end;
 
 # _Q6A (Fn+F4) Microphone Mute key
 #into method label _Q6A replace_content
