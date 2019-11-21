@@ -1,6 +1,6 @@
 # ThinkPad T430 EFI for macOS Catalina 10.15.1
 
-This is a repo which includes files required to run macOS Catalina 10.15.1 on a ThinkPad T430 with Intel HD 4000 graphics and a 1600x900 display.
+This is a repo which includes files required to run macOS Catalina 10.15.1 on a ThinkPad T430 (2349U2B) with Intel HD 4000 graphics and a 1600x900 display.
 
 These are the versions of software included in this repository:
 
