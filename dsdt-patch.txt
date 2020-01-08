@@ -172,6 +172,18 @@ Device (PNLF)\n
 }\n
 end;
 
+#fn keys (F8 and F9)
+into method label _Q15 replace_content
+begin
+    	Notify(\_SB.PCI0.LPC.KBD, 0x0205)\n
+    	Notify(\_SB.PCI0.LPC.KBD, 0x0285)\n
+end;
+into method label _Q14 replace_content
+begin
+    	Notify(\_SB.PCI0.LPC.KBD, 0x0206)\n
+    	Notify(\_SB.PCI0.LPC.KBD, 0x0286)\n
+end;
+
 # fn keys
 # _Q15 (Fn+F8) brightness down key
 into method label _Q15 replace_content
